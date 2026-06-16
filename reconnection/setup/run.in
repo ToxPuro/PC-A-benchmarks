@@ -1,0 +1,37 @@
+!                              -*-f90-*-     (for emacs) 
+!
+!  Initialisation parameters for dust particles moving in a random 
+!  velocity field.
+!
+&run_pars
+  cvsid="b5b444f24"
+  nt=100000000, it1=50, isave=100, itorder=3
+  nt=100000000, it1=5000, isave=50000, itorder=3
+  dsnap=0.25, dvid=2.0, ip=20
+  tmax=6
+  lpencil_check=F
+  offset_min_calc=1.
+  lperi =  F  , F  , T
+  bcx='a','s','s','s','s','a','a'
+  bcy='s','a','s','s','a','s','a'
+  bcz='s','s','a','s','a','a','s' 
+  iproc_pt=0, lpoint = 67, mpoint = 67
+  iproc_p2=0, lpoint2 = 67, mpoint2 = 67
+/
+&eos_run_pars
+/
+&hydro_run_pars
+  lupw_uu=T
+/
+&density_run_pars
+  lupw_lnrho=T
+/
+&entropy_run_pars
+/
+&viscosity_run_pars
+  nu=500e-6
+/
+&magnetic_run_pars
+  eta=25e-6
+  lupw_aa=T
+/

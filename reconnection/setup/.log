@@ -1,0 +1,7 @@
+-rw-r--r-- 1 the21vk the21vk 2887 Apr 20 17:45 pc_commands.log
+-rw-r--r-- 1 the21vk the21vk  196 Apr 20 17:11 print.in
+-rw-r--r-- 1 the21vk the21vk  739 Apr 20 17:14 run.in
+-rw-r--r-- 1 the21vk the21vk  301 Apr 20 17:11 src/cparam.local
+-rw-r--r-- 1 the21vk the21vk  356 Apr 20 17:11 src/Makefile.local
+-rw-r--r-- 1 the21vk the21vk   64 Apr 20 17:12 src/revision.txt
+-rw-r--r-- 1 the21vk the21vk  697 Apr 20 17:11 start.in

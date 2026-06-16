@@ -1,0 +1,18 @@
+module load \
+craype-x86-rome \
+libfabric/1.22.0 \
+craype-network-ofi \
+perftools-base/24.11.0 \
+xpmem/2.9.6-1.1_20240510205610__g087dc11fc19d \
+cce/18.0.1 \
+craype/2.7.33 \
+cray-dsmml/0.3.0 \
+cray-mpich/8.1.31 \
+cray-libsci/24.11.0 \
+PrgEnv-cray/8.6.0 \
+snic-env/1.0.0 \
+systemdefault/1.0.0 \
+rocm/6.3.3 \
+flex/2.6.4 \
+m4/1.4.19 \
+bison/3.8.2
