@@ -1,0 +1,75 @@
+!
+! Convection in vertically stratified atmosphere/solar convection zone
+! Run parameters
+!
+&run_pars
+  cvsid="bfbf9907d"
+  nt=10000000, it1=1000, isave=5000, tmax=30000., dtmin=5e-5
+!  nt=100, it1=10, isave=2000 tmax=30000
+!  nt=10, it1=1, isave=2000 tmax=30000
+!  nt=0, it1=1, isave=2000 tmax=30000
+  dsnap=200., d1davg=1.0, dvid=1.5, ialive=0
+  cdtv=0.30, cdt=0.30
+  !d2davg=5.
+  slice_position='c', zbot_slice=0., ztop_slice=0.97
+  !lread_oldsnap_nomag=T
+  lpencil_check=F
+  lpencil_check_small=F  !, ltest_bcs=F
+  !lpersist=F
+  !dspec=25., vel_spec=T, mag_spec=T !(for energy spectra)
+  luse_oldgrid=F
+  lrepair_snap=F
+  lnowrite=F
+  ltiming_io=T !, lupdate_cvs=T
+  max_walltime=165600.0 !(46 hours)
+  !max_walltime=85600.0 !(approx. 23 hours)
+  lbackup_snap=T
+  nsnfdfap_backups=3
+  lwrite_dim_again=T
+/
+&eos_run_pars
+/
+&hydro_run_pars
+  Omega=0.1
+  lupw_uu=T
+/
+&density_run_pars
+  lupw_lnrho=T
+/
+&grav_run_pars
+  gravz_profile='const',gravz=-1.
+/
+&entropy_run_pars
+!  iheatcond='kramers', hcond0_kramers=0.0434873, nkramers=1.
+  iheatcond='kramers','chit', hcond0_kramers=0.0434873, nkramers=1.
+  iheatcond='kramers','chit', hcond0_kramers=0.008, nkramers=1.
+  Fbot=0.0001
+!  lupw_ss=T, lnew_chit=T
+!  chi_t=2e-4, delta_chi_t=0.5
+  lupw_ss=T
+!  lchit_mean=T, lchit_fluct=T    !MR: lchit_mean=F ?  then cooling layer
+  lchit_mean=F, lchit_fluct=F
+  lchit_total=T
+  chi_t=1.25e-5
+!  chi_t0=2.5e-5, chi_t1=1.25e-5
+  chit_prof1=0., chit_prof2=1., widthss=0.025
+!  chit_fluct_prof1=0., chit_fluct_prof2=1.
+  lcalc_ssmean=T
+  zz1=0.95, zz2=2., zz1_fluct=-1.0, zz2_fluct=2.
+/
+&viscosity_run_pars
+  ivisc='nu-const'
+  nu=1.0e-7
+/
+&magnetic_run_pars
+  !reinitialize_aa=T
+  !initaa='gaussian-noise'
+  !amplaa=1e-5
+  iresistivity='eta-const'
+  lupw_aa=T
+  eta=1.0e-7
+/
+&power_spectrum_run_pars
+/
+&gpu_run_pars
+/
