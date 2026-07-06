@@ -1,0 +1,31 @@
+!                              -*-f90-*-     (for emacs)
+!
+!  Initialisation parameters for dust particles moving in a random
+!  velocity field.
+!
+&init_pars
+  cvsid="b5b444f24"
+  lwrite_ic=T, lwrite_aux=T
+  wav1=6.2831853072
+  lshift_origin=T,T,T
+  lshift_origin_lower=F
+  lperi =  F  , F  , T
+  bcx='a','s','s','s','s','a','a'
+  bcy='s','a','s','s','a','s','a'
+! bcz='s','s','a','s','a','a','s' 
+/
+&eos_init_pars
+  gamma=1.
+  cs0=10.0
+/
+&hydro_init_pars
+  inituu='gaussian-noise', ampluu=1e-2
+/
+&density_init_pars
+/
+&magnetic_init_pars
+  initaa='coalesce_tubes',amplaa=1.0,sheet_thickness=0.005
+  magnetic_yaver_range=-.000001,.000001
+  magnetic_xaver_range=-.000001,.000001
+  !lpress_equil=T
+/

@@ -1,0 +1,39 @@
+# Log file of Pencil Code commands.
+# This compiles with the same parameters as last time in this directory:
+# pc_build -p
+
+# 2026-04-18 23:21:40
+/cfs/klemming/scratch/t/the21vk/pencil-code/bin/pc_build -f compilers/Cray_MPI LDFLAGS+=-Wl,--no-relax FFLAGS+=-O1
+# make '-j' 'FFLAGS_DOUBLE=-s real64 -fPIC' 'CFLAGS_DOUBLE=-DDOUBLE_PRECISION' 'LD_MPI=' 'CFLAGS_FFTW3=' 'FFLAGS_FFTW3=' 'LD_FFTW3=' 'CFLAGS_FFTW2=' 'FFLAGS_FFTW2=' 'LD_FFTW2=' 'FC=ftn' 'F77=$(FC)' 'FFLAGS=-J . -M 878' 'OMPFFLAGS=-homp' 'LDFLAGS_HELPER=-h dynamic' 'LDFLAGS=-Wl,--no-relax' 'CFLAGS=-fPIC -DFUNDERSC=1' 'OMPLFLAGS=-fopenmp' 'MODULE_NAME_ORDER=CRAY' 'MODULE_PREFIX=' 'MODULE_INFIX=$' 'MODULE_SUFFIX=_' 'CC=cc' 'LDFLAGS+=-Wl,--no-relax' 'FFLAGS+=-O1' 'default_to_be'
+
+# 2026-04-19 02:35:26
+srun  -n 16  /cfs/klemming/scratch/t/the21vk/vinay/vk_GPU_runs/new_coalesce_tubes_GPU/8192f/src/start.x 
+
+# 2026-04-19 02:35:35
+srun  -n 16  /cfs/klemming/scratch/t/the21vk/vinay/vk_GPU_runs/new_coalesce_tubes_GPU/8192f/src/run.x 
+
+# 2026-04-20 13:24:00
+# copied from '/cfs/klemming/scratch/t/the21vk/vinay/GPU_coalesce/../vk_GPU_runs/new_coalesce_tubes_GPU/8192f'
+
+# 2026-04-20 13:25:57
+/cfs/klemming/scratch/t/the21vk/pencil-code/bin/pc_build -f compilers/Cray_MPI LDFLAGS+=-Wl,--no-relax FFLAGS+=-O1
+# make '-j' 'FFLAGS_DOUBLE=-s real64 -fPIC' 'CFLAGS_DOUBLE=-DDOUBLE_PRECISION' 'LD_MPI=' 'CFLAGS_FFTW3=' 'FFLAGS_FFTW3=' 'LD_FFTW3=' 'CFLAGS_FFTW2=' 'FFLAGS_FFTW2=' 'LD_FFTW2=' 'FC=ftn' 'F77=$(FC)' 'FFLAGS=-J . -M 878' 'OMPFFLAGS=-homp' 'LDFLAGS_HELPER=-h dynamic' 'LDFLAGS=-Wl,--no-relax' 'CFLAGS=-fPIC -DFUNDERSC=1' 'OMPLFLAGS=-fopenmp' 'MODULE_NAME_ORDER=CRAY' 'MODULE_PREFIX=' 'MODULE_INFIX=$' 'MODULE_SUFFIX=_' 'CC=cc' 'LDFLAGS+=-Wl,--no-relax' 'FFLAGS+=-O1' 'default_to_be'
+
+# 2026-04-20 13:26:28
+/cfs/klemming/scratch/t/the21vk/pencil-code/bin/pc_build -f compilers/Cray_MPI LDFLAGS+=-Wl,--no-relax FFLAGS+=-O1
+# make '-j' 'FFLAGS_DOUBLE=-s real64 -fPIC' 'CFLAGS_DOUBLE=-DDOUBLE_PRECISION' 'LD_MPI=' 'CFLAGS_FFTW3=' 'FFLAGS_FFTW3=' 'LD_FFTW3=' 'CFLAGS_FFTW2=' 'FFLAGS_FFTW2=' 'LD_FFTW2=' 'FC=ftn' 'F77=$(FC)' 'FFLAGS=-J . -M 878' 'OMPFFLAGS=-homp' 'LDFLAGS_HELPER=-h dynamic' 'LDFLAGS=-Wl,--no-relax' 'CFLAGS=-fPIC -DFUNDERSC=1' 'OMPLFLAGS=-fopenmp' 'MODULE_NAME_ORDER=CRAY' 'MODULE_PREFIX=' 'MODULE_INFIX=$' 'MODULE_SUFFIX=_' 'CC=cc' 'LDFLAGS+=-Wl,--no-relax' 'FFLAGS+=-O1' 'default_to_be'
+
+# 2026-04-20 14:44:23
+srun  -n 8  /cfs/klemming/scratch/t/the21vk/vinay/GPU_coalesce/4096e/src/start.x 
+
+# 2026-04-20 14:44:29
+srun  -n 8  /cfs/klemming/scratch/t/the21vk/vinay/GPU_coalesce/4096e/src/run.x 
+
+# 2026-04-20 17:11:58
+# copied from '/cfs/klemming/scratch/t/the21vk/vinay/GPU_coalesce/4096e'
+
+# 2026-04-20 17:45:40
+srun  -n 8  /cfs/klemming/scratch/t/the21vk/vinay/GPU_coalesce/4096e_Pm20/src/start.x 
+
+# 2026-04-20 17:45:50
+srun  -n 8  /cfs/klemming/scratch/t/the21vk/vinay/GPU_coalesce/4096e_Pm20/src/run.x 
