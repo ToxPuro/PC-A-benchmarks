@@ -24,7 +24,7 @@
   max_walltime=165600.0 !(46 hours)
   !max_walltime=85600.0 !(approx. 23 hours)
   lbackup_snap=T
-  nsnfdfap_backups=3
+  nsnap_backups=3
   lwrite_dim_again=T
 /
 &eos_run_pars
