@@ -1,0 +1,31 @@
+!  -*-f90-*-  (for Emacs)    vim:set filetype=fortran:  (for vim)
+!
+!  sample file for 1-D sound wave
+!
+&run_pars
+  cvsid="323dd14ee"
+  !nt=80000000, it1=1000, isave=0, itorder=3
+  !nt=10000, it1=1000, isave=0, itorder=3
+  !nt=3, it1=1, isave=0, itorder=3
+  nt=1000000, it1=1000, isave=0, itorder=3
+  !ivid=1
+  !nt=4001, it1=1000, isave=0, itorder=3
+  !nt=1000, it1=1, isave=0, itorder=3
+  cdt=0.22
+  dvid=1e-100, tmax=7e8 !, dtmin=-1e-12
+  lwrite_aux=T
+  lpencil_check=F
+  lpencil_check_small=F
+  dsnap=1e+200
+  !ip=12
+/
+&special_run_pars
+  Vprime_choice='quartic'
+  lspeed_of_light_dt=T
+  lnucleate_bubbles=F
+  plasma_coupling_coeff=8.0
+  !friction_start=1e+2
+  noise_strength=1e-1
+  !ldR_for_wall_vel=T
+/
+
