@@ -1,0 +1,39 @@
+! --f90-- (for Emacs) vim:set filetype=fortran: (for vim)
+!
+! Convection in vertically stratified atmosphere/solar convection zone
+! Initialisation parameters
+!
+&init_pars
+xyz0 = -2., -2., -0.5, ! first corner of box
+Lxyz = 4., 4., 1.5, ! box size
+lperi = T , T , F, ! periodic direction?
+!coord_system='spherical'
+coord_system='cylindrical'
+! bcz = 's','s','a','a2','c1:Fgs'
+!bcz = 's','s','a','a2','c1:der'
+bcz = 's','s','a','a2','c1:der'
+fbcz2=0.,0.,0.,0.,-10.
+lnowrite=F, lwrite_ic=F
+/
+&eos_init_pars
+! cs0=0.447214, gamma=1.6666666,
+cs0=0.3, gamma=1.6666666,
+rho0=1.
+/
+&hydro_init_pars
+urand=1e-4
+/
+&density_init_pars
+initlnrho='piecew-poly', widthlnrho=0.025
+/
+&grav_init_pars
+gravz_profile='const',z1=0., z2=1., zref=1., gravz=-1.,
+/
+&entropy_init_pars
+initss='piecew-poly', widthss=0.025
+mpoly0=1.5, mpoly1=3.25, mpoly2=1.5, isothtop=0,
+/
+&magnetic_init_pars
+initaa='gaussian-noise'
+amplaa=1.e-3
+/
