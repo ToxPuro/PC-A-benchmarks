@@ -6,11 +6,10 @@
 &init_pars
 xyz0 = -2., -2., -0.5, ! first corner of box
 Lxyz = 4., 4., 1.5, ! box size
-lperi = T , T , F, ! periodic direction?
+lperi = F , F , T, ! periodic direction?
 coord_system='spherical'
-! bcz = 's','s','a','a2','c1:Fgs'
-!bcz = 's','s','a','a2','c1:der'
-bcz = 's','s','a','a2','c1:der'
+bcx='a','sfr','sfr','a2','s'
+bcy='s','a'  ,'sfr','s','s'
 fbcz2=0.,0.,0.,0.,-10.
 lnowrite=F, lwrite_ic=F
 /
