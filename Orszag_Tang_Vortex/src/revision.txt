@@ -1,0 +1,2 @@
+Revision: b3d5c0681
+ m src/astaroth/submodule

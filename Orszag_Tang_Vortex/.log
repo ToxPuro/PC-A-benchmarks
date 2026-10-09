@@ -1,0 +1,8 @@
+-rw-r--r-- 1 brandenb pg_snic2020-4-12 26942 Sep 17 17:00 pc_commands.log
+-rw-r--r-- 1 brandenb pg_snic2020-4-12   196 Sep 15 09:38 print.in
+-rw-r--r-- 1 brandenb pg_snic2020-4-12   398 Sep 17 12:50 run.in
+-rw-r--r-- 1 brandenb pg_snic2020-4-12   311 Sep 15 12:29 src/cparam.local
+-rw-r--r-- 1 brandenb pg_snic2020-4-12   332 Sep 15 09:41 src/Makefile.local
+-rw-r--r-- 1 brandenb pg_snic2020-4-12    21 Sep 17 12:50 src/revision.txt
+-rw-r--r-- 1 brandenb pg_snic2020-4-12   421 Sep 17 12:50 start.in
+-rw-r--r-- 1 brandenb pg_snic2020-4-12     6 Sep 15 09:38 video.in

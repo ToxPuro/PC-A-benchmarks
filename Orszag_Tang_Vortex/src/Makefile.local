@@ -1,0 +1,14 @@
+###                             -*-Makefile-*-
+### Makefile for modular pencil code -- local part
+### Included by `Makefile'
+###
+
+MPICOMM   = mpicomm
+HYDRO     = hydro
+DENSITY   = density
+MAGNETIC  = magnetic
+EOS       = eos_idealgas
+INITIAL_CONDITION = initial_condition/Orszag_Tang_Vortex
+REAL_PRECISION=double
+#GPU = gpu_astaroth
+ENERGY=entropy
